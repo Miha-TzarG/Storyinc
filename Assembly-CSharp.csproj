@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8041489B-7DB2-693C-BBAA-060C52EF6366}</ProjectGuid>
+    <ProjectGuid>{A80BFB3D-CD50-9AAF-A213-167DC4C2F8B2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -57,16 +57,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\GameScript.cs" />
+    <Compile Include="Assets\MyLoop.cs" />
     <Compile Include="Assets\Scripts\FirstSceneScript.cs" />
     <Compile Include="Assets\Scripts\GameControl.cs" />
+    <Compile Include="Assets\Btnloop.cs" />
     <Compile Include="Assets\Scripts\Button.cs" />
     <Compile Include="Assets\Scripts\Newimage.cs" />
+    <Compile Include="Assets\nimgTest.cs" />
+    <Compile Include="Assets\Scripts\Cam.cs" />
     <Compile Include="Assets\Scripts\InventoryScrypt.cs" />
     <Compile Include="Assets\Loop.cs" />
-    <Compile Include="Assets\MyLoop.cs" />
-    <Compile Include="Assets\Scripts\Cam.cs" />
-    <Compile Include="Assets\Btnloop.cs" />
-    <Compile Include="Assets\nimgTest.cs" />
+    <Compile Include="Assets\Snap.cs" />
+    <Compile Include="Assets\ScrollRectSnap.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

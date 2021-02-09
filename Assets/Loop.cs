@@ -6,7 +6,7 @@ public class Loop : MonoBehaviour
 {
 
     public GameObject[] levels;
-    private Camera mainCamera;
+    public Camera mainCamera;
     private Vector2 screenBounds;
     public float choke;
 
@@ -47,17 +47,21 @@ public class Loop : MonoBehaviour
             GameObject firstChild = children[1].gameObject;
             GameObject lastChild = children[children.Length - 1].gameObject;
             float halfObjectWidth = lastChild.GetComponent<SpriteRenderer>().bounds.extents.x - choke;
-            if(transform.position.x + screenBounds.x > lastChild.transform.position.x + halfObjectWidth)
+          //  Debug.Log(firstChild);
+            if (transform.position.x + screenBounds.x > lastChild.transform.position.x + halfObjectWidth)
             {
                 firstChild.transform.SetAsLastSibling();
-                firstChild.transform.position = new Vector3(lastChild.transform.position.x + halfObjectWidth * 3, lastChild.transform.position.y, lastChild.transform.position.z);
-            
+                //firstChild.transform.position = new Vector3(lastChild.transform.position.x + halfObjectWidth * 3, lastChild.transform.position.y, lastChild.transform.position.z);
+                firstChild.transform.position = new Vector3(lastChild.transform.position.x +  2.5f, lastChild.transform.position.y, lastChild.transform.position.z);
+                firstChild.transform.localScale = new Vector2(0.9f, 0.9f);
+             //   Debug.Log(firstChild.transform.localScale);
             }
             else if (transform.position.x - screenBounds.x < firstChild.transform.position.x - halfObjectWidth)
             {
                 lastChild.transform.SetAsFirstSibling();
-                lastChild.transform.position = new Vector3(firstChild.transform.position.x - halfObjectWidth * 3, firstChild.transform.position.y, firstChild.transform.position.z);
-
+                //lastChild.transform.position = new Vector3(firstChild.transform.position.x - halfObjectWidth * 3, firstChild.transform.position.y, firstChild.transform.position.z);
+                lastChild.transform.position = new Vector3(firstChild.transform.position.x - 2.5f, firstChild.transform.position.y, firstChild.transform.position.z);
+                lastChild.transform.localScale = new Vector2(0.9f, 0.9f);
             }
             
         }
@@ -74,5 +78,13 @@ public class Loop : MonoBehaviour
     void Update()
     {
         levels[0].transform.position = new Vector2(PN.transform.position.x, PN.transform.position.y);
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Bg")
+        {
+            Debug.Log("sdss");
+        }
     }
 }

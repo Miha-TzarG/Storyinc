@@ -11,6 +11,8 @@ public class GameControl : MonoBehaviour
     public GameObject btnExit;
     public GameObject panelSetting;
     public GameObject panelChoselvl;
+    public GameObject btnShop;
+    public GameObject panelShop;
 
     public GameObject btnSound;
     
@@ -42,7 +44,11 @@ public class GameControl : MonoBehaviour
             ExitGame();
 
         };
+        btnShop.GetComponent<Button>().OnButtonClick = delegate
+        {
+            OpenShop();
 
+        };
 
 
     }
@@ -54,9 +60,22 @@ public class GameControl : MonoBehaviour
     {
         panelSetting.SetActive(true);
         panelChoselvl.SetActive(false);
-        Debug.Log("Setting");
+      //  Debug.Log("Setting Open");
     }
 
+    public void OpenShop()
+    {
+        panelShop.SetActive(true);
+        panelChoselvl.SetActive(false);
+      //  Debug.Log("Shop Open");
+    }
+
+    public void BackShop()
+    {
+        panelShop.SetActive(false);
+        panelChoselvl.SetActive(true);
+        //Debug.Log("Shop Exit");
+    }
     public void SoundOffOn()
     {
         //  btnSound.GetComponent<Image>();
@@ -81,6 +100,8 @@ public class GameControl : MonoBehaviour
 
         }
 
+
+
     public void StartGameScene()
     {
         SceneManager.LoadScene(2);
@@ -93,4 +114,6 @@ public class GameControl : MonoBehaviour
         PlayerPrefs.Save();
         Application.Quit();
     }
+
+
 }

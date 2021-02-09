@@ -10,7 +10,7 @@ public class Cam : MonoBehaviour
         if (Screen.width >= 1440 && Screen.height >= 2760)
         {
 
-            GetComponent<Camera>().orthographicSize = 5.9f;
+            GetComponent<Camera>().orthographicSize = 5.18f;
         }
 
         if (Screen.width < 1440 && Screen.height < 2760)
