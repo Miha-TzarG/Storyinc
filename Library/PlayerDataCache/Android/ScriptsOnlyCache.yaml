@@ -73,11 +73,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12900}
     - Class: 114
-      Script: {instanceID: 14502}
+      Script: {instanceID: 14508}
     - Class: 114
-      Script: {instanceID: 15140}
+      Script: {instanceID: 15146}
     - Class: 114
-      Script: {instanceID: 15186}
+      Script: {instanceID: 15192}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -128,13 +128,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12900}
     - Class: 114
-      Script: {instanceID: 13680}
+      Script: {instanceID: 13686}
     - Class: 114
-      Script: {instanceID: 14020}
+      Script: {instanceID: 14026}
     - Class: 114
-      Script: {instanceID: 14502}
+      Script: {instanceID: 14508}
     - Class: 114
-      Script: {instanceID: 15140}
+      Script: {instanceID: 15146}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -181,17 +181,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12900}
     - Class: 114
-      Script: {instanceID: 13680}
+      Script: {instanceID: 13686}
     - Class: 114
-      Script: {instanceID: 14020}
+      Script: {instanceID: 14026}
     - Class: 114
-      Script: {instanceID: 14032}
+      Script: {instanceID: 14038}
     - Class: 114
-      Script: {instanceID: 14054}
+      Script: {instanceID: 14060}
     - Class: 114
-      Script: {instanceID: 14502}
+      Script: {instanceID: 14508}
     - Class: 114
-      Script: {instanceID: 15140}
+      Script: {instanceID: 15146}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -252,27 +252,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12900}
     - Class: 114
-      Script: {instanceID: 13052}
+      Script: {instanceID: 13054}
     - Class: 114
-      Script: {instanceID: 13126}
+      Script: {instanceID: 13128}
     - Class: 114
-      Script: {instanceID: 13288}
+      Script: {instanceID: 13270}
     - Class: 114
-      Script: {instanceID: 13680}
+      Script: {instanceID: 13292}
     - Class: 114
-      Script: {instanceID: 13794}
+      Script: {instanceID: 13686}
     - Class: 114
-      Script: {instanceID: 14020}
+      Script: {instanceID: 13800}
     - Class: 114
-      Script: {instanceID: 14054}
+      Script: {instanceID: 14026}
     - Class: 114
-      Script: {instanceID: 14502}
+      Script: {instanceID: 14060}
     - Class: 114
-      Script: {instanceID: 14694}
+      Script: {instanceID: 14508}
     - Class: 114
-      Script: {instanceID: 15140}
+      Script: {instanceID: 14700}
     - Class: 114
-      Script: {instanceID: 90988}
+      Script: {instanceID: 15146}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -294,6 +294,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 259
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -526,6 +528,12 @@ ScriptsOnlyBuild:
     className: EventSystem
   - hash:
       serializedVersion: 2
+      Hash: a51ea7a68ba68e2d12461371750e1fe7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SelectObj
+  - hash:
+      serializedVersion: 2
       Hash: b424b4eeb810aecb0ff91c62639241e9
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.Experimental.U2D.Animation
@@ -574,10 +582,22 @@ ScriptsOnlyBuild:
     className: Newimage
   - hash:
       serializedVersion: 2
+      Hash: a175d3fa016bb4685e52a0b8fbf13078
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScrollRectSnap
+  - hash:
+      serializedVersion: 2
       Hash: 040dd48e3a027d5424519a5fa2009df4
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: fb3a689c20b4cf4e36cb5c34ca298e26
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Snap
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -622,7 +642,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: bddf80caf65b8ba9458e3bbe227c3c87
+      Hash: d3212b35b638d2c7ee61a4facece78c4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: nimgTest
@@ -842,22 +862,10 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: fb3a689c20b4cf4e36cb5c34ca298e26
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Snap
-  - hash:
-      serializedVersion: 2
-      Hash: a175d3fa016bb4685e52a0b8fbf13078
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ScrollRectSnap
   platform: 13
   scenePathNames:
   - Assets/Scenes/FirstLoad.unity
   - Assets/Scenes/Main.unity
   - Assets/Scenes/Inventory.unity
   - Assets/Scenes/GameScene.unity
-  playerPath: D:/Develop/UnityProject/Storyinc/Stotyinc.apk
+  playerPath: D:/Develop/UnityProject/Storyinc/Storyinc.apk

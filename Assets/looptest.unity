@@ -816,6 +816,7 @@ MonoBehaviour:
   img: {fileID: 844836335}
   uvelich: 0
   v: {x: 0, y: 0, z: 0}
+  pn: {fileID: 0}
 --- !u!1 &859294564
 GameObject:
   m_ObjectHideFlags: 0
@@ -1178,6 +1179,7 @@ MonoBehaviour:
   img: {fileID: 972219006}
   uvelich: 0
   v: {x: 0, y: 0, z: 0}
+  pn: {fileID: 0}
 --- !u!1 &1034355276
 GameObject:
   m_ObjectHideFlags: 0
@@ -1331,6 +1333,7 @@ MonoBehaviour:
   img: {fileID: 1034355277}
   uvelich: 0
   v: {x: 0, y: 0, z: 0}
+  pn: {fileID: 0}
 --- !u!1 &1081632965
 GameObject:
   m_ObjectHideFlags: 0
@@ -1615,6 +1618,7 @@ MonoBehaviour:
   img: {fileID: 0}
   uvelich: 0
   v: {x: 0, y: 0, z: 0}
+  pn: {fileID: 0}
 --- !u!61 &1160782258
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1789,6 +1793,7 @@ MonoBehaviour:
   img: {fileID: 0}
   uvelich: 0
   v: {x: 0, y: 0, z: 0}
+  pn: {fileID: 0}
 --- !u!61 &1301278599
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2092,6 +2097,7 @@ MonoBehaviour:
   img: {fileID: 0}
   uvelich: 0
   v: {x: 0, y: 0, z: 0}
+  pn: {fileID: 0}
 --- !u!61 &1458359482
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2320,6 +2326,7 @@ GameObject:
   - component: {fileID: 1639555724}
   - component: {fileID: 1639555726}
   - component: {fileID: 1639555727}
+  - component: {fileID: 1639555729}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -2460,6 +2467,19 @@ MonoBehaviour:
   img: {fileID: 1639555724}
   uvelich: 0
   v: {x: 0, y: 0, z: 0}
+  pn: {fileID: 0}
+--- !u!122 &1639555729
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639555722}
+  m_Enabled: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278255610
+  m_Size: 2.47
 --- !u!1 &1668434334
 GameObject:
   m_ObjectHideFlags: 0
@@ -2499,6 +2519,7 @@ MonoBehaviour:
   - {fileID: 1034355276}
   - {fileID: 972219005}
   - {fileID: 844836332}
+  minButtonNum: 0
   bttnDistance: 0
   bttnLenght: 0
   newImage: {fileID: 0}

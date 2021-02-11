@@ -61,14 +61,16 @@
     <Compile Include="Assets\Scripts\FirstSceneScript.cs" />
     <Compile Include="Assets\Scripts\GameControl.cs" />
     <Compile Include="Assets\Btnloop.cs" />
+    <Compile Include="Assets\SelectObj.cs" />
     <Compile Include="Assets\Scripts\Button.cs" />
     <Compile Include="Assets\Scripts\Newimage.cs" />
+    <Compile Include="Assets\ScrollRectSnap.cs" />
+    <Compile Include="Assets\Snap.cs" />
     <Compile Include="Assets\nimgTest.cs" />
     <Compile Include="Assets\Scripts\Cam.cs" />
     <Compile Include="Assets\Scripts\InventoryScrypt.cs" />
     <Compile Include="Assets\Loop.cs" />
-    <Compile Include="Assets\Snap.cs" />
-    <Compile Include="Assets\ScrollRectSnap.cs" />
+    <Compile Include="Assets\StylePlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

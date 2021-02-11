@@ -11,13 +11,17 @@ public class InventoryScrypt : MonoBehaviour
     public SpriteRenderer playerFace;
     public Text txtWhatFace;
 
-   
+    public Sprite[] Hair;
+    public SpriteRenderer playerHair;
+
+    public Sprite[] Dress;
+    public SpriteRenderer playerDress;
 
     // Start is called before the first frame update
     void Start()
     {
         numFace = PlayerPrefs.GetInt("NumFace");
-
+        playerFace.GetComponent<SpriteRenderer>().sprite = spriteFace[numFace];
 
     }
 
@@ -26,21 +30,69 @@ public class InventoryScrypt : MonoBehaviour
     {
         
     }
-    public void ChooseFace(int numSpriteFace)
+    public void ChooseFace()
     {
-        playerFace.GetComponent<SpriteRenderer>().sprite = spriteFace[numSpriteFace];
-        if(numSpriteFace == 0)
+
+
+        if (numFace + 1 > spriteFace.Length-1)
         {
-            txtWhatFace.text = "Европейский тип лица";
+            numFace = spriteFace.Length-1;
         }
-        if (numSpriteFace == 1)
+        else
         {
-            txtWhatFace.text = "Смуглый тип лица";
+            numFace = numFace + 1;
+            playerFace.GetComponent<SpriteRenderer>().sprite = spriteFace[numFace];
         }
-        numFace = numSpriteFace;
+        /*   playerFace.GetComponent<SpriteRenderer>().sprite = spriteFace[numSpriteFace];
+           if(numSpriteFace == 0)
+           {
+               txtWhatFace.text = "Европейский тип лица";
+           }
+           if (numSpriteFace == 1)
+           {
+               txtWhatFace.text = "Смуглый тип лица";
+           }*/
+        //   numFace = numSpriteFace;
         PlayerPrefs.SetInt("NumFace", numFace);
         PlayerPrefs.Save();
 
+    }
+    public void PrevChooseFace()
+    {
+      
+        if (numFace-1 < 0)
+        {
+            numFace = 0;
+        }
+        else
+        {
+            numFace = numFace - 1;
+            playerFace.GetComponent<SpriteRenderer>().sprite = spriteFace[numFace];
+        }
+       // Debug.Log(numFace);
+        /*   playerFace.GetComponent<SpriteRenderer>().sprite = spriteFace[numSpriteFace];
+           if(numSpriteFace == 0)
+           {
+               txtWhatFace.text = "Европейский тип лица";
+           }
+           if (numSpriteFace == 1)
+           {
+               txtWhatFace.text = "Смуглый тип лица";
+           }*/
+        //   numFace = numSpriteFace;
+        PlayerPrefs.SetInt("NumFace", numFace);
+        PlayerPrefs.Save();
+
+    }
+
+
+    public void ChooseHair(int numHair)
+    {
+        playerHair.GetComponent<SpriteRenderer>().sprite = Hair[numHair];
+    }
+    public void ChooseDress(int numDress)
+    {
+        playerDress.GetComponent<SpriteRenderer>().sprite = Dress[numDress];
     }
 
     public void GoToScene(int numScene)

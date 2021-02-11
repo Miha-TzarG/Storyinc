@@ -18,6 +18,7 @@ public class nimgTest : MonoBehaviour
     public SpriteRenderer sp;
 
     public Image img;
+    public Image insideImg;
 
     public bool uvelich;
 
@@ -54,6 +55,7 @@ public class nimgTest : MonoBehaviour
                 transform.localScale = new Vector2(oldX, oldY);
 
             img.color = new Color(255f, 255f, 255f, 1f);
+            insideImg.color = new Color(255f, 255f, 255f, 1f);
             sp.sortingOrder = 1;
             this.transform.SetSiblingIndex(pn.transform.childCount);
             // point.x = 0.5f;
@@ -66,9 +68,10 @@ public class nimgTest : MonoBehaviour
         {
             //  if (point.x > 0.6f && point.x < 0f + 0.4f)
             // {
+            Debug.Log("sa");
             img.color = new Color(255f, 255f, 255f, .5f);
-
-                oldX = oldX - speedUmenshenie;
+            insideImg.color = new Color(255f, 255f, 255f, .5f);
+            oldX = oldX - speedUmenshenie;
                 oldY = oldY - speedUmenshenie;
                 if (oldX <= newX)
                 {
