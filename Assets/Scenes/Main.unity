@@ -11360,7 +11360,7 @@ SpriteRenderer:
   m_Size: {x: 2.5, y: 4.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &280620923
@@ -14031,7 +14031,6 @@ GameObject:
   - component: {fileID: 677048546}
   - component: {fileID: 677048545}
   - component: {fileID: 677048548}
-  - component: {fileID: 677048549}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -14116,23 +14115,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0599bd1af926dfa47b2a9017801dcdcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &677048549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 677048544}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed57b14df2bf00f409e8a81535740853, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levels:
-  - {fileID: 1903799624}
-  mainCamera: {fileID: 0}
-  choke: 0.05
-  PN: {fileID: 376685683}
 --- !u!1 &677243765
 GameObject:
   m_ObjectHideFlags: 0
