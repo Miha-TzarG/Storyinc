@@ -12,6 +12,8 @@ public class GameControl : MonoBehaviour
     public GameObject panelSetting;
     public GameObject panelChoselvl;
     public GameObject btnShop;
+    public GameObject btnGarderob;
+    public GameObject btnReklama;
     public GameObject panelShop;
 
     public GameObject btnSound;
@@ -49,8 +51,10 @@ public class GameControl : MonoBehaviour
             OpenShop();
 
         };
-
-
+        btnGarderob.GetComponent<Button>().OnButtonClick = delegate
+        {
+            StartGarderobScene();
+        };
     }
 
 
@@ -60,20 +64,41 @@ public class GameControl : MonoBehaviour
     {
         panelSetting.SetActive(true);
         panelChoselvl.SetActive(false);
-      //  Debug.Log("Setting Open");
+        btnExit.SetActive(false);
+        btnGarderob.SetActive(false);
+        btnReklama.SetActive(false);
+       // btnShop.SetActive(false);
+       //  Debug.Log("Setting Open");
     }
 
+    public void CloseSetting()
+    {
+        panelSetting.SetActive(false);
+        panelChoselvl.SetActive(true);
+        btnExit.SetActive(true);
+        btnGarderob.SetActive(true);
+        btnReklama.SetActive(true);
+    }
     public void OpenShop()
     {
         panelShop.SetActive(true);
         panelChoselvl.SetActive(false);
-      //  Debug.Log("Shop Open");
+        btnExit.SetActive(false);
+        btnGarderob.SetActive(false);
+        btnReklama.SetActive(false);
+        btnSetting.SetActive(false);
+        //  Debug.Log("Shop Open");
     }
 
     public void BackShop()
     {
         panelShop.SetActive(false);
         panelChoselvl.SetActive(true);
+
+        btnExit.SetActive(true);
+        btnGarderob.SetActive(true);
+        btnReklama.SetActive(true);
+        btnSetting.SetActive(true);
         //Debug.Log("Shop Exit");
     }
     public void SoundOffOn()
@@ -104,6 +129,10 @@ public class GameControl : MonoBehaviour
 
     public void StartGameScene()
     {
+        SceneManager.LoadScene(3);
+    }
+    public void StartGarderobScene()
+    {
         SceneManager.LoadScene(2);
     }
 
@@ -112,7 +141,7 @@ public class GameControl : MonoBehaviour
         Debug.Log("dsa");
         PlayerPrefs.SetInt("Music", musicOffOnn);
         PlayerPrefs.Save();
-        Application.Quit();
+  //      Application.Quit();
     }
 
 

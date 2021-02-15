@@ -68,7 +68,7 @@ public class nimgTest : MonoBehaviour
         {
             //  if (point.x > 0.6f && point.x < 0f + 0.4f)
             // {
-            Debug.Log("sa");
+        //    Debug.Log("sa");
             img.color = new Color(255f, 255f, 255f, .5f);
             insideImg.color = new Color(255f, 255f, 255f, .5f);
             oldX = oldX - speedUmenshenie;

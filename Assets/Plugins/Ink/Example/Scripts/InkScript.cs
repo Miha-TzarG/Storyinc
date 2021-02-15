@@ -13,6 +13,15 @@ public class InkScript : MonoBehaviour
 	//public string a;
 	//public int b;
 	public Camera cam;
+	public GameObject garderob;
+
+	public bool GarderobSvernut;
+	public GameObject PanelGarderob;
+	public GameObject btnScernutGarderob;
+
+	public GameObject PanelSettings;
+
+	public GameObject personag;
 
 	public string nm = "Mike";
 	public Text txt;
@@ -38,7 +47,7 @@ public class InkScript : MonoBehaviour
 	//public HistoryScript historyScript;
 	void Awake()
 	{
-		txt.text = "ggggggg \n dsadsad";
+		//txt.text = "ggggggg \n dsadsad";
 		// Remove the default message
 		RemoveChildren();
 		StartStory();
@@ -84,6 +93,11 @@ public class InkScript : MonoBehaviour
 				RefreshView();
 			}
 		}
+        //if (garderob)
+       // {
+		//	enableMousebtn = false;
+
+		//}
 	}
 	private void Start()
 	{
@@ -124,7 +138,7 @@ public class InkScript : MonoBehaviour
 	// Continues over all the lines of text, then displays all the choices. If there are no choices, the story is finished!
 	void RefreshView()
 	{
-
+		
 		a = 0;
 		// Remove all the UI on screen
 		//RemoveChildren();
@@ -164,7 +178,7 @@ public class InkScript : MonoBehaviour
 				//	new Vector2(65, 0);
 				//	uitransform.sizeDelta = new Vector2(, 0);
 				//	Debug.Log(rectContainer.height);
-				button.transform.position = new Vector2(0, i - a-0.7f);
+				button.transform.position = new Vector2(0, i - a-2.4f);
 
 				a = a + 1.8f;
 				// Tell the button what to do when we press it
@@ -179,7 +193,23 @@ public class InkScript : MonoBehaviour
 		// If we've read all the content and there's no choices, the story is finished!
 		else
 		{
-			enableMousebtn = true;
+
+		
+			if (story.variablesState["gar"].ToString() == "1")
+			{
+				Debug.Log("garderob: " + story.variablesState["gar"].ToString());
+				
+				garderob.SetActive(true);
+				enableMousebtn = false;
+				personag.transform.position = new Vector2(personag.transform.position.x + 1.36f, personag.transform.position.y);
+				RemoveChildren();
+
+			}
+            else
+			{	
+				enableMousebtn = true;
+				
+			}
 			/*if (story.canContinue)
 			{
 				//	RemoveChildren();
@@ -206,7 +236,7 @@ public class InkScript : MonoBehaviour
 				});
 			}*/
 
-		Debug.Log("Child: " + panel.transform.childCount);
+	//	Debug.Log("Child: " + panel.transform.childCount);
 	}
 
 	// When we click the choice button, tell the story to choose that choice!
@@ -224,19 +254,24 @@ public class InkScript : MonoBehaviour
 
 	}
 
+
 	// Creates a textbox showing the the line of text
 	void CreateContentView(string text)
 	{
 		//story.variablesState["name"] = "Mike";
 
-		txt.text = story.variablesState["name"].ToString();
+		//txt.text = story.variablesState["name"].ToString();
+		
 
 		mudr = story.variablesState["mudr"].ToString();
 		voin = story.variablesState["voin"].ToString();
 		Jessi = story.variablesState["Jessi"].ToString();
 		Jackman = story.variablesState["Jackman"].ToString();
 		names = story.variablesState["name"].ToString();
-		Debug.Log("mudr: " + mudr + " -- " + "voin: " + voin + " -- " + "Jessi: " + Jessi + " -- " + "Jackman: " + mudr);
+
+
+
+		//Debug.Log("mudr: " + mudr + " -- " + "voin: " + voin + " -- " + "Jessi: " + Jessi + " -- " + "Jackman: " + mudr);
 		//if (a == "Гвен")
 		//{
 		//	txt.text = nm;
@@ -247,12 +282,72 @@ public class InkScript : MonoBehaviour
 
 
 		Text storyText = Instantiate(textPrefab) as Text;
+		//txt = GameObject.FindGameObjectWithTag("tagWhoSay").GetComponent<Text>();
+
 		storyText.text = text;
-
+	
 		storyText.transform.SetParent(panel.transform, false);
+		
+	//	Debug.Log(GameObject.FindGameObjectWithTag("tagWhoSay").GetComponent<Text>());
+		//	txt.text = story.variablesState["name"].ToString();
+		/*if (story.variablesState["gar"].ToString() == "1")
+		{
+			Debug.Log("garderob: " + story.variablesState["gar"].ToString());
+				
+			garderob.SetActive(true);
+			enableMousebtn = false;
+		}*/
 		//txtOnImage.text = storyText.text;
-		Debug.Log(storyText.text);
+		//Debug.Log(storyText.text);
+		StartCoroutine(tExtfind());
+	}
 
+	IEnumerator tExtfind()
+    {
+		yield return new WaitForSeconds(0.002f);
+		
+		txt = GameObject.FindGameObjectWithTag("tagWhoSay").GetComponent<Text>();
+		txt.text = story.variablesState["name"].ToString(); 
+	}
+	public void Exitgarderob()
+    {
+		enableMousebtn = true;
+		garderob.SetActive(false);
+		story.variablesState["gar"] = 0;
+		personag.transform.position = new Vector2(personag.transform.position.x - 1.36f, personag.transform.position.y);
+		/*if (story.canContinue)
+		{
+
+			string text = story.Continue();
+
+			CreateContentView(text);
+
+
+		}
+		
+
+		RefreshView();*/
+		//Start();
+	}
+
+	public void SvernutGarderob()
+    {
+		if (!GarderobSvernut)
+		{
+			PanelGarderob.transform.position = new Vector2(PanelGarderob.transform.position.x, PanelGarderob.transform.position.y - 1000);
+			btnScernutGarderob.transform.position = new Vector2(btnScernutGarderob.transform.position.x, btnScernutGarderob.transform.position.y - 900);
+			GarderobSvernut = true;
+			btnScernutGarderob.transform.rotation = Quaternion.Euler(0, 0, -90);
+			//btnScernutGarderob.transform.Rotate(0f, 0f, -90f);
+		}
+		else
+		{
+			PanelGarderob.transform.position = new Vector2(PanelGarderob.transform.position.x, PanelGarderob.transform.position.y + 1000);
+			btnScernutGarderob.transform.position = new Vector2(btnScernutGarderob.transform.position.x, btnScernutGarderob.transform.position.y + 900);
+			GarderobSvernut = false;
+			btnScernutGarderob.transform.rotation = Quaternion.Euler(0, 0, 90);
+			//btnScernutGarderob.transform.Rotate(0f, 0f, 90f);
+		}
 	}
 
 	// Creates a button showing the choice text
@@ -284,9 +379,30 @@ public class InkScript : MonoBehaviour
 		{
 			GameObject.Destroy(panel.transform.GetChild(i).gameObject);
 		}
+		txt = null;
 
 	}
 
+	public void OpenSettings()
+    {
+		enableMousebtn = false;
+		PanelSettings.SetActive(true);
+
+
+	}
+	public void CloseSettings()
+	{
+		
+		PanelSettings.SetActive(false);
+		
+		StartCoroutine(EnableMousebtnCouratina());
+	}
+
+	IEnumerator EnableMousebtnCouratina()
+    {
+		yield return new WaitForSeconds(0.1f);
+		enableMousebtn = true;
+	}
 	[SerializeField]
 	private TextAsset inkJSONAsset = null;
 	public Story story;
