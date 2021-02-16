@@ -57,17 +57,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameScript.cs" />
+    <Compile Include="Assets\ButtonForInk.cs" />
     <Compile Include="Assets\Scripts\FirstSceneScript.cs" />
+    <Compile Include="Assets\Scripts\HistoryScript.cs" />
     <Compile Include="Assets\Scripts\GameControl.cs" />
     <Compile Include="Assets\Scripts\Button.cs" />
     <Compile Include="Assets\Scripts\Newimage.cs" />
     <Compile Include="Assets\Scripts\ScrollRectSnap.cs" />
+    <Compile Include="Assets\TextAndImageinInkText.cs" />
     <Compile Include="Assets\Scripts\nimgTest.cs" />
     <Compile Include="Assets\Scripts\Cam.cs" />
     <Compile Include="Assets\Scripts\InventoryScrypt.cs" />
-    <Compile Include="Assets\TextAndImageinInkText.cs" />
-    <Compile Include="Assets\ButtonForInk.cs" />
-    <Compile Include="Assets\Scripts\HistoryScript.cs" />
+    <Compile Include="Assets\Scenes\DwnLoadpict.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

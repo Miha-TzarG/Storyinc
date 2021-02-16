@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class InventoryScrypt : MonoBehaviour
 {
@@ -29,6 +30,7 @@ public class InventoryScrypt : MonoBehaviour
     public GameObject PanelChooseDress;
     public GameObject PanelChooseMackup;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,12 +41,15 @@ public class InventoryScrypt : MonoBehaviour
         playerFace.GetComponent<SpriteRenderer>().sprite = spriteFace[numFace];
         playerHair.GetComponent<SpriteRenderer>().sprite = Hair[numHair];
         playerDress.GetComponent<SpriteRenderer>().sprite = Dress[numDress];
-      //  playerMackup.GetComponent<SpriteRenderer>().sprite = Mackup[numMackup];
-
+        //  playerMackup.GetComponent<SpriteRenderer>().sprite = Mackup[numMackup];
+  
     }
 
-    // Update is called once per frame
-    void Update()
+    //***********************************
+
+        //*********************************
+        // Update is called once per frame
+        void Update()
     {
         
     }
@@ -59,7 +64,10 @@ public class InventoryScrypt : MonoBehaviour
         else
         {
             numFace = numFace + 1;
-            playerFace.GetComponent<SpriteRenderer>().sprite = spriteFace[numFace];
+
+            //sprPersonazh
+         
+          playerFace.GetComponent<SpriteRenderer>().sprite = spriteFace[numFace];
         }
         /*   playerFace.GetComponent<SpriteRenderer>().sprite = spriteFace[numSpriteFace];
            if(numSpriteFace == 0)
@@ -86,7 +94,7 @@ public class InventoryScrypt : MonoBehaviour
         else
         {
             numFace = numFace - 1;
-            playerFace.GetComponent<SpriteRenderer>().sprite = spriteFace[numFace];
+          playerFace.GetComponent<SpriteRenderer>().sprite = spriteFace[numFace];
         }
         // Debug.Log(numFace);
         /*   playerFace.GetComponent<SpriteRenderer>().sprite = spriteFace[numSpriteFace];
@@ -235,5 +243,5 @@ public class InventoryScrypt : MonoBehaviour
         SceneManager.LoadScene(numScene);
     }
 
-
+ 
 }
