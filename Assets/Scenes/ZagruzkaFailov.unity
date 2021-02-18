@@ -250,132 +250,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &374441928
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 374441930}
-  - component: {fileID: 374441929}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &374441929
+--- !u!114 &374441929 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 9173436880034705592, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+  m_PrefabInstance: {fileID: 9173436880333453169}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 374441928}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8cc6f77f5fb50a64594081287c8f4d46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberLevel:
-  - spriteLevelLocation:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    nameLevelLocation:
-    - Location.png
-    - Mountain_temple_day.png
-    - Temple_Day.png
-    - Location.png
-    - Square_Athens.png
-    - Poetry_Athens.png
-    - Fair_Athens.png
-    - Location_Square_Night.png
-    - Temple_Night_no_fire.png
-    - Location.png
-    - Location.png
-    - Location.png
-  - spriteLevelLocation: []
-    nameLevelLocation: []
-  - spriteLevelLocation: []
-    nameLevelLocation: []
-  - spriteLevelLocation: []
-    nameLevelLocation: []
-  - spriteLevelLocation: []
-    nameLevelLocation: []
-  url: https://www.tzargor.ru/Sprites/Fair_Athens.png
-  sp: {fileID: 2023769443}
-  sprPersonazh:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  textPersonazh:
-  - PersefonaNilked.png
-  - PersefonaNilkedAfro.png
-  - PersefonaNilkedEuro.png
-  - PersefonaNilkedMulat.png
-  sprHeir:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  textHair:
-  - Hair1.png
-  - Hair2.png
-  - Hair3.png
-  - Hair4.png
-  sprDress:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  textDress:
-  - Dress1.png
-  - Dress2.png
-  - Dress3.png
-  - Dress4.png
-  folder:
-  - Body
-  - Hair
-  - Dress
-  texter:
-  - textPersonazh
-  - textHair
-  - textDress
-  img: {fileID: 428042398}
-  a: 
-  zagruzka: 0
-  txt: {fileID: 517011330}
-  go:
-  - {fileID: 0}
-  - {fileID: 0}
-  zak: 0
---- !u!4 &374441930
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 374441928}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.501106, y: 14.186543, z: -13.3789}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &428042397
 GameObject:
   m_ObjectHideFlags: 0
@@ -1715,3 +1600,140 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &9173436880333453169
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9173436880034705592, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: sp
+      value: 
+      objectReference: {fileID: 2023769443}
+    - target: {fileID: 9173436880034705592, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: img
+      value: 
+      objectReference: {fileID: 428042398}
+    - target: {fileID: 9173436880034705592, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: txt
+      value: 
+      objectReference: {fileID: 517011330}
+    - target: {fileID: 9173436880034705592, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: numberLevel.Array.data[0].musicClip.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705592, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: numberLevel.Array.data[0].audioSource.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705592, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: numberLevel.Array.data[0].auedioSource.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705592, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: numberLevel.Array.data[0].txtmusicClip.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705592, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: numberLevel.Array.data[0].txtmusicClip.Array.data[0]
+      value: crowd.mp3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705592, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: numberLevel.Array.data[0].txtmusicClip.Array.data[1]
+      value: fire_burning.mp3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705592, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: numberLevel.Array.data[0].txtmusicClip.Array.data[2]
+      value: fire_done.mp3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705592, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: numberLevel.Array.data[0].txtmusicClip.Array.data[3]
+      value: Greece_Story_Calm_Theme_Temple.mp3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705592, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: numberLevel.Array.data[0].txtmusicClip.Array.data[4]
+      value: Greece_Story_Danger_Tanatos.mp3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705592, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: numberLevel.Array.data[0].txtmusicClip.Array.data[5]
+      value: Greece_Story_Disquiet.mp3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705592, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: numberLevel.Array.data[0].txtmusicClip.Array.data[6]
+      value: Greece_Story_Fear.mp3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705592, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: numberLevel.Array.data[0].txtmusicClip.Array.data[7]
+      value: Greece_Story_Greece_Holiday.mp3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705592, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: numberLevel.Array.data[0].txtmusicClip.Array.data[8]
+      value: Greece_Story_Hero_Admet_Theme.mp3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705592, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: numberLevel.Array.data[0].txtmusicClip.Array.data[9]
+      value: Greece_Story_Mysterious_Goddess.mp3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705592, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: numberLevel.Array.data[0].txtmusicClip.Array.data[10]
+      value: Greece_Story_Summer_Day.mp3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705592, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: numberLevel.Array.data[0].txtmusicClip.Array.data[11]
+      value: money.mp3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705592, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: numberLevel.Array.data[0].txtmusicClip.Array.data[12]
+      value: morning_birds_insects.mp3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705593, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: m_Name
+      value: GameObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705595, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705595, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.501106
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705595, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.186543
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705595, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.3789
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705595, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705595, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705595, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705595, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705595, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705595, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173436880034705595, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b8cb666f9bc083745aa6a4e0adcc8e67, type: 3}

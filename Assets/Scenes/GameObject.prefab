@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9173436880034705593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9173436880034705595}
+  - component: {fileID: 9173436880034705592}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9173436880034705595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9173436880034705593}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.501106, y: 14.186543, z: -13.3789}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9173436880034705592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9173436880034705593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cc6f77f5fb50a64594081287c8f4d46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberLevel:
+  - spriteLevelLocation:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    nameLevelLocation:
+    - Location.png
+    - Mountain_temple_day.png
+    - Temple_Day.png
+    - Location.png
+    - Square_Athens.png
+    - Poetry_Athens.png
+    - Fair_Athens.png
+    - Location_Square_Night.png
+    - Temple_Night_no_fire.png
+    - Location.png
+    - Location.png
+    - Location.png
+  - spriteLevelLocation: []
+    nameLevelLocation: []
+  - spriteLevelLocation: []
+    nameLevelLocation: []
+  - spriteLevelLocation: []
+    nameLevelLocation: []
+  - spriteLevelLocation: []
+    nameLevelLocation: []
+  url: https://www.tzargor.ru/Sprites/Fair_Athens.png
+  sp: {fileID: 0}
+  sprPersonazh:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textPersonazh:
+  - PersefonaNilked.png
+  - PersefonaNilkedAfro.png
+  - PersefonaNilkedEuro.png
+  - PersefonaNilkedMulat.png
+  sprHeir:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textHair:
+  - Hair1.png
+  - Hair2.png
+  - Hair3.png
+  - Hair4.png
+  sprDress:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  textDress:
+  - Dress1.png
+  - Dress2.png
+  - Dress3.png
+  - Dress4.png
+  folder:
+  - Body
+  - Hair
+  - Dress
+  texter:
+  - textPersonazh
+  - textHair
+  - textDress
+  img: {fileID: 0}
+  a: 
+  zagruzka: 0
+  txt: {fileID: 0}
+  go:
+  - {fileID: 0}
+  - {fileID: 0}
+  zak: 0

@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement;
 using System.IO;
 public class DwnLoadpict : MonoBehaviour
 {
+    //public InkScript inkScript;
+
     public List<NumLevel> numberLevel;
 
 
@@ -30,16 +32,16 @@ public class DwnLoadpict : MonoBehaviour
     WWW www;
     [Obsolete]
     WWW www2;
-
+    [Obsolete]
+    WWW www3;
     public int zagruzka;
 
     public Text txt;
   //  public Slider slider;
   //  public Text progressText;
     public GameObject[] go;
-    // Start is called before the first frame update
-
-     void Start()
+ 
+    void Start()
     {
        
 
@@ -47,17 +49,16 @@ public class DwnLoadpict : MonoBehaviour
      }
 
  
-    
-    //   IEnumerator Start()
+  
     IEnumerator LoadImages()
     {
-        // Debug.Log(numberLevel[0].spriteLevelLocation[4]);
-        //  a = textPersonazh[j];
-      //  yield return new WaitForSeconds(0.0001f);
+
+      
+
+
         for (int k = 0; k < 12; k++)
         {
-            // if (zagruzka < 0)
-            // {
+            
             url = "https://www.tzargor.ru/Sprites/Location/0/Location/" + numberLevel[0].nameLevelLocation[k];
             // www2 = new WWW(url);
             www2 = new WWW(url);
@@ -75,15 +76,25 @@ public class DwnLoadpict : MonoBehaviour
             zagruzka = zagruzka + 4;
             //}
         }
-    /*    if (!www2.isDone)
+     /*   for (int j = 0; j < 13; j++)
         {
-            //       zagruzka = Mathf.RoundToInt(www2.progress * 100);
-            Debug.Log("DownLoad2: " + Mathf.RoundToInt(www2.progress * 100) + "%");
+            //musicClip;
+    //public AudioSource[] audioSource;
+    //public string[] txtmusicClip;
+            url = "https://www.tzargor.ru/Sprites/Location/0/Music/" + numberLevel[0].txtmusicClip[j];
+            www3 = new WWW(url);
+
+            // Ожидаем загрузку ресурса
+            yield return www3;
+            numberLevel[0].musicClip[j] = www3.GetAudioClip();
+        
 
         }
-        else Debug.Log("Download2 100%");*/
-        //   }
-        //   numberLevel[0].spriteLevelLocation[4]
+        for (int g = 0; g < 13; g++)
+        {
+            numberLevel[0].audioSource[g].clip = numberLevel[0].musicClip[g];
+
+        }*/
 
         //******************************************
         for (int i = 0; i < 3; i++)
@@ -224,4 +235,7 @@ public struct NumLevel
 
     public Sprite[] spriteLevelLocation;
     public string[] nameLevelLocation;
+    public AudioClip[] musicClip;
+    public AudioSource[] audioSource;
+    public string[] txtmusicClip;
 }

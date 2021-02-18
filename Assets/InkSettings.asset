@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 983af1b6602bf416b9928d40b37a38bd, type: 3}
   m_Name: InkSettings
   m_EditorClassIdentifier: 
-  templateFile: {fileID: 4900000, guid: e8f8f8bf0d838e2438aca1150c63d616, type: 3}
-  defaultJsonAssetPath: {fileID: 102900000, guid: cfdc73097b5376747bfe11ec8211fcb7, type: 3}
+  templateFile: {fileID: 4900000, guid: 80f120b0423f47645a0af49434ecf332, type: 3}
+  defaultJsonAssetPath: {fileID: 102900000, guid: 437e5e3e84beceb4994edeb5dde5d203, type: 3}
   compileAutomatically: 1
   delayInPlayMode: 1
   handleJSONFilesAutomatically: 1
